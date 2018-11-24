@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.6rem;
+	background-color: #e5eeee;
+	letter-spacing: .4px;
+	// min-height: 100%;
+}
+
+.box {
+	padding: 55px 70px 55px 70px;
+    margin: 55px auto;
+    width: 400px;
+    height: 496px;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    position: relative;
+    box-shadow: 0px 58px 98px -44px rgba(0,0,0,0.75);
+    &__nav {
+    	margin: 0 0 20px 0;
+    	padding: 0;
+    	& a {
+    		text-decoration: none;
+    		list-style-type: none;
+    		display: inline-block;
+    		font-size: 1.8rem;
+    		font-weight: bold;
+    		padding-bottom: 2px;
+    	}
+    }
+    &__sign {
+		color: #fbf6e4;
+		border-bottom: 2px solid #e66a64;
+    }
+    &__join {
+		color: #e1c2f1;
+		margin-left: 20px;
+		&:hover {
+			color: #fbf6e4;
+		}
+    }
+    &__label {
+    	color: #fbf6e4;
+    	letter-spacing: 1.5px;
+    	font-weight: bold;
+    	margin: 20px 0 10px 0;
+    	display: inline-block;
+    }
+    &__form {
+    	background: transparent;
+    	border: 2px solid #a188c9;
+    	padding: 10px;
+    	width: 100%;
+    	outline: none;
+    }
+    &__checkbox {
+    	margin: 20px 0 0 0;
+    	display: block;
+    }
+    &__check {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        background-color: green;
+    	vertical-align: middle;
+    	background: #fff;
+        outline: none;
+        &:checked {
+            background-color: #23ae92;
+            background-image: url(../img/check.png);
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__check-info {
+    	font-size: 1.3rem;
+    	font-weight: bold;
+    	color: #fbf6e4;
+    	letter-spacing: 1.5px;
+    	vertical-align: middle;
+    }
+    &__btn {
+    	color: #fbf6e4;
+    	background-color: #23ae92;
+    	border: transparent;
+    	width: 100%;
+    	padding: 13px;
+    	font-weight: bold;
+    	letter-spacing: 2px;
+    	margin: 35px 0 30px 0;
+    	transition: all .3s ease;
+    	&:hover, &:focus, &:active {
+			// border-radius: 10px;
+			box-shadow: 0 0 15px 2px #23ae92;
+    	}
+    }
+    &__links {
+    	display: flex;
+    	justify-content: space-between;
+    	& a {
+    		transition: all .3s ease;
+    		text-decoration: none;
+    		font-size: 1.2rem;
+    		color: #9a94c4;
+    		letter-spacing: 1.5px;
+    		border-bottom: 1px solid #9a94c4;
+    		padding-bottom: 2px;
+    		&:hover {
+    			color: #fff;
+    		}
+    	}
+    }
+}
